@@ -2,13 +2,13 @@
 
 namespace arrayshift
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-           // int[] array = { 2, 4, 6, 8 };
-            int[] array = { 4, 8, 15, 28,42 };
+           int[] array = { 2, 4, 6, 8 };
+            //int[] array = { 4, 8, 15, 28,42 };
             Console.Write("[");
             for (int i = 0; i < array.Length-1; i++)
             {
@@ -17,7 +17,7 @@ namespace arrayshift
             Console.Write($"{array[array.Length-1]}");
             Console.WriteLine("]");
 
-            int val = 16;
+            int val = 5;
             //call Arrayshift function and return a new array
             int[] newarray = ArrayShift(array, val);
            
@@ -31,7 +31,7 @@ namespace arrayshift
             Console.Write("]");
         }
 
-        static int[] ArrayShift(int[] array, int val){
+    public  static int[] ArrayShift(int[] array, int val){
 
 
             int[] newArray = new int[array.Length + 1];
