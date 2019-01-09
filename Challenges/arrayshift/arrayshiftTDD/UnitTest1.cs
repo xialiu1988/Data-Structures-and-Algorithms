@@ -8,7 +8,7 @@ namespace XUnitTestProject1
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void CanreturnFiveAtMiddlepoint()
         {
             int[] test = { 2, 4, 6, 8 };
             int value = 5;
@@ -23,7 +23,7 @@ namespace XUnitTestProject1
 
 
         [Fact]
-        public void Test2()
+        public void Canreturn16AtMiddle()
         {
             int[] test = { 4, 8, 15, 23, 42 };
             int value = 16;
@@ -35,7 +35,7 @@ namespace XUnitTestProject1
         }
 
         [Fact]
-        public void Test3()
+        public void Canreturn5after2()
         {
             int[] test = { 2 };
             int value = 5;
