@@ -9,3 +9,8 @@ Approach & Efficiency
 
 Big O Time = O(n) // Big O Space = O(n)
 Both the time and the space of this algorithm is O(n). 
+
+Here is the whiteboard picture
+
+
+![whiteboard](../../Assets/whiteboard.JPG)
