@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace arrayshift
 {
     public class Program
