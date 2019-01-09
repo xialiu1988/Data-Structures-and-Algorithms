@@ -31,7 +31,6 @@ namespace arrayshift
             Console.Write("]");
         }
 
-
         static int[] ArrayShift(int[] array, int val){
 
 
