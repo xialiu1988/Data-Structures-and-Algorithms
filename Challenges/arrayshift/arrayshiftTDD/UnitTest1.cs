@@ -14,7 +14,7 @@ namespace XUnitTestProject1
             int value = 5;
             int[] expected = { 2, 4, 5, 6, 8 };
 
-            Assert.Equal(expected, Program.ArrayShift(test,value));
+            Assert.Equal(expected, Program.ArrayShift(test, value));
 
 
         }
@@ -25,9 +25,9 @@ namespace XUnitTestProject1
         [Fact]
         public void Test2()
         {
-            int[] test = { 4,8,15,23,42};
+            int[] test = { 4, 8, 15, 23, 42 };
             int value = 16;
-            int[] expected = { 4,8,15,16,23,42 };
+            int[] expected = { 4, 8, 15, 16, 23, 42 };
 
             Assert.Equal(expected, Program.ArrayShift(test, value));
 
