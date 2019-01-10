@@ -2,7 +2,7 @@
 
 namespace binarysearch
 {
-    class Program
+   public class Program
     {
         static void Main(string[] args)
         {
@@ -20,6 +20,7 @@ namespace binarysearch
 
         public static int BinarySearch(int[] arr,int key)
         {
+       
             //declare two indexes which are left and right
             int leftIndex=0;
             int rightIndedx =arr.Length - 1;
