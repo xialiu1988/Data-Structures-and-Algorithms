@@ -6,4 +6,4 @@ Return the index of the array’s element that is equal to the search key, or -1 i
 
 #Whiteboard
 
-![whiteboard](../../Assets/binarysearch.png)
+![whiteboard](../../Assets/binarysearch.JPG)
