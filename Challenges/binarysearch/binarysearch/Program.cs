@@ -10,7 +10,7 @@ namespace binarysearch
             int[] nums = { 4, 8, 15, 16, 23, 42 };
             int key = 15;
 
-            
+       
             //int[] nums = { 11, 22, 33, 44, 55, 66, 77 };
            // int key = 99;
 
