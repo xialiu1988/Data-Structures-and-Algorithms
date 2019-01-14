@@ -9,6 +9,7 @@ namespace LinkedList.Classes
         public Node Head { get; set; }
         public Node Current { get; set; }
 
+       
         public void Insert(int value)
         {
             Node insertNode = new Node(value);
@@ -41,7 +42,7 @@ namespace LinkedList.Classes
             Current = Head;
             while (Current != null)
             {
-                Console.WriteLine(Current.Value);
+                Console.Write(Current.Value+"  ");
                 Current = Current.Next;
             }
 
