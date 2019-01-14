@@ -9,7 +9,10 @@ namespace LinkedList.Classes
         public Node Head { get; set; }
         public Node Current { get; set; }
 
-       
+/// <summary>
+/// Insert method to insert a node with value in the list
+/// </summary>
+/// <param name="value"></param>
         public void Insert(int value)
         {
             Node insertNode = new Node(value);
@@ -36,7 +39,9 @@ namespace LinkedList.Classes
             return false;
         }
      
-
+        /// <summary>
+        ///output the list
+        /// </summary>
         public void print()
         {
             Current = Head;
