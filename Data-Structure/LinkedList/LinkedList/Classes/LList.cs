@@ -150,5 +150,41 @@ namespace LinkedList.Classes
             return;
         }
 
+
+        public int GetValue(int k)
+        {
+            
+            Current = Head;
+            int counter = 0;
+
+
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+                counter++;
+            }
+
+            counter++;
+
+            Current = Head;
+            int counter2 = 0;
+            while (Current.Next != null)
+            { counter2++;
+                if (counter2 + k == counter) return Current.Value;
+                Current = Current.Next;
+            }
+
+            counter2++;
+            if (counter2 + k == counter) return Current.Value;
+            else
+            {
+                Console.WriteLine("Exception!");
+                return -1;
+            }
+
+        }
+
+
+
     }
 }
