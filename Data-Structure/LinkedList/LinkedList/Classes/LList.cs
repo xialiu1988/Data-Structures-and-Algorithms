@@ -110,9 +110,44 @@ namespace LinkedList.Classes
         public void InsertAfter(int value, int newvalue)
         {
 
+            Current = Head;
+            if (Current == null)
+            {
+                Console.WriteLine("Empty List");
+                return;
+            }
+            if (Current.Value == value)
+            {
+                Node newNode = new Node(newvalue);
+                newNode.Next = Current.Next;
+                Current.Next = newNode;
+                return;
+            }
+           
+
+            while (Current.Next != null)
+            {
+
+                if (Current.Value == value)
+                {
+                    Node newNode = new Node(newvalue);
+                  newNode.Next=Current.Next;
+                    Current.Next = newNode;
+
+                }
+                Current = Current.Next;
+
+            }
 
 
+            if (Current.Value == value)
+            {
+                Node newNode = new Node(newvalue);
+                newNode.Next = Current.Next;
+                Current.Next = newNode;
 
+            }
+            return;
         }
 
     }

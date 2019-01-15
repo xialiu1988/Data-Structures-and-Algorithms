@@ -11,13 +11,15 @@ namespace LinkedList
 
 
             LList list = new LList();
-            int[] numsArr = { 2, 4, 6, 7, 10, 98, 21 };
-            for(int i = 0; i < numsArr.Length; i++)
-            {
-                list.Insert(numsArr[i]);
-
-            }
+            list.Insert(2);
+            list.Insert(4);
+            list.Insert(6);
+            list.Insert(7);
+            list.Insert(79);
             list.print();
+            list.InsertAfter(6, 88);
+            list.print();
+            list.InsertBefore(6, 48);
             list.Append(43);
             list.print();
 
