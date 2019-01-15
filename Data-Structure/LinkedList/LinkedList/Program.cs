@@ -17,7 +17,8 @@ namespace LinkedList
                 list.Insert(numsArr[i]);
 
             }
-
+            list.print();
+            list.Append(43);
             list.print();
 
         }

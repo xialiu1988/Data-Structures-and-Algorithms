@@ -37,5 +37,21 @@ namespace LinkedListTDD
             Assert.True(list.Includes(10));
 
         }
+
+        [Fact]
+        public void CanAppendValue()
+        {
+            LList list = new LList();
+            list.Insert(0);
+            list.Insert(10);
+            list.Insert(38);
+            list.print();
+            list.Append(43);
+
+            Assert.True(list.Includes(43));
+
+        }
+
+
     }
 }
