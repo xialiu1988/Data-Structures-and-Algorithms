@@ -22,7 +22,13 @@ namespace LinkedList
             list.InsertBefore(6, 48);
             list.Append(43);
             list.print();
-
+            Console.WriteLine("...............");
+           int a= list.GetValue(9);
+            int b = list.GetValue(0);
+            int c = list.GetValue(4);
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
         }
     }
 }
