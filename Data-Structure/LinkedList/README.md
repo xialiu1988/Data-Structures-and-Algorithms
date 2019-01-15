@@ -13,6 +13,7 @@ This object should be aware of a default empty value assigned to head when the l
 
 
 Insert : takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+Time: Big O=O(1); Space:O(1);
 
 
 
@@ -21,3 +22,16 @@ Includes: takes any value as an argument and returns a boolean result depending 
 
 
 Print: takes in no arguments and outputs all of the current Node values in the Linked List.
+
+
+Append:  Add the value to the end of the list
+          Time: Big O=O(n); Space:O(n);
+
+
+InsertBefore: Insert a node with new value in front of some specific node.
+               
+			  Time: Big O=O(n); Space:O(n);
+
+			   
+InsertAfter:  Insert a node with new value in front of some specific node.
+                Time: Big O=O(n); Space:O(n);
