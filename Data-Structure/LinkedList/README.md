@@ -25,6 +25,7 @@ Print: takes in no arguments and outputs all of the current Node values in the L
 
 
 Append:  Add the value to the end of the list
+
           Time: Big O=O(n); Space:O(n);
 
 
@@ -34,4 +35,5 @@ InsertBefore: Insert a node with new value in front of some specific node.
 
 			   
 InsertAfter:  Insert a node with new value in front of some specific node.
+
                 Time: Big O=O(n); Space:O(n);
