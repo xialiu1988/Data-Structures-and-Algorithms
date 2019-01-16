@@ -289,5 +289,58 @@ namespace LinkedListTDD
 
 
 
+        [Fact]
+
+        public void CanGet0thValue()
+        {
+
+            LList list = new LList();
+            list.Insert(0);
+            list.Insert(10);
+            list.Insert(38);
+
+            Assert.Equal(0, list.GetValue(0));
+
+
+
+        }
+
+        [Fact]
+
+        public void CanGet2thValue()
+        {
+
+            LList list = new LList();
+            list.Insert(0);
+            list.Insert(10);
+            list.Insert(38);
+
+            Assert.Equal(38, list.GetValue(2));
+
+
+
+        }
+
+
+
+
+        [Fact]
+
+        public void CanNotGet9thValue()
+        {
+
+            LList list = new LList();
+            list.Insert(0);
+            list.Insert(10);
+            list.Insert(38);
+
+            Assert.Equal(-1, list.GetValue(9));
+
+
+
+        }
+
+
+
     }
 }
