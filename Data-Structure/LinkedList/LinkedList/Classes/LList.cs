@@ -178,7 +178,7 @@ namespace LinkedList.Classes
             if (counter2 + k == counter) return Current.Value;
             else
             {
-                Console.WriteLine("Exception!");
+                Console.Write("Exception!");
                 return -1;
             }
 
