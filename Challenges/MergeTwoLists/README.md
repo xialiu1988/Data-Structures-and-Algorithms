@@ -40,4 +40,4 @@ Time<-Big o=o(n);
 
 #whiteboard 
 
-![white](../../Assets/whiteboard.jpg)
+![white](../../Assets/white.jpg)
