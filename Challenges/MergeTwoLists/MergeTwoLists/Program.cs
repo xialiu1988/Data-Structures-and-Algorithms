@@ -16,8 +16,8 @@ namespace MergeTwoLists
             LList list2 = new LList();
             list2.Insert(7);
             list2.Insert(79);
-            list2.Insert(9);
-            list2.Insert(39);
+           // list2.Insert(9);
+            //list2.Insert(39);
             list2.print();
             Console.WriteLine("++++++++++++++++++++++");
             MergeTwoLists(list1, list2);
@@ -30,8 +30,8 @@ namespace MergeTwoLists
             list2.Current = list2.Head;
 
 
-            int counter1 = 0;
-            int counter2 = 0;
+            int counter1 = 0;//using this to define the length of list1
+            int counter2 = 0;//using this to define the length of list2
 
             while (list1.Current.Next != null)
             {
@@ -51,6 +51,7 @@ namespace MergeTwoLists
 
             counter2++;
 
+            //reset the current to the head
             list1.Current = list1.Head;
             list2.Current = list2.Head;
 
@@ -62,8 +63,6 @@ namespace MergeTwoLists
                 list2.Current = list2.Current.Next;
                 list1.Current.Next = temp;
                 list1.Current = list1.Current.Next;
-                //  temp = list1.Current.Next;
-                //list1.Current.Next = temp;
             }
 
            
@@ -79,8 +78,7 @@ namespace MergeTwoLists
 
 
             }
-            list1.Current.Next = list2.Current;
-            list1.Current = list1.Current.Next;
+          
 
 
 
@@ -88,7 +86,8 @@ namespace MergeTwoLists
 
             while(counter1<counter2 && list1.Current.Next != null)
             {
-              Node temp = list1.Current.Next;
+
+                Node temp = list1.Current.Next;
                 list1.Current.Next = list2.Current;
                 list1.Current = list1.Current.Next;
                 list2.Current = list2.Current.Next;
@@ -96,7 +95,9 @@ namespace MergeTwoLists
                 list1.Current = list1.Current.Next;
 
             }
-   
+            list1.Current.Next = list2.Current;
+
+
             list1.print();
         }
     }
