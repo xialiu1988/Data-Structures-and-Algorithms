@@ -9,3 +9,6 @@ TABLE OF CONTENTS
 
 
 3.[Challenge:fibonaccisequence](Challenges/fibonaccisequence)
+
+
+4.[Challenge:Merge](Challenges/MergeTwoLists)
