@@ -16,17 +16,17 @@ list2 longer.
 
 
 
-![short](../../../Assets/short.png)
+![short](../../Assets/short.png)
 
 
 
 
-![short](../../../Assets/same.png)
+![short](../../Assets/same.png)
 
 
 
 
-![short](../../../Assets/longer.png)
+![short](../../Assets/longer.png)
 
 
 
@@ -40,4 +40,4 @@ Time<-Big o=o(n);
 
 #whiteboard 
 
-![white](../../../Assets/whiteboard.jpg)
+![white](../../Assets/whiteboard.jpg)
