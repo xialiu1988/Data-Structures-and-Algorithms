@@ -9,7 +9,7 @@ Queue:  A Queue is very similar to the Stack data structure with one major diffe
 ## Challenge
 <!-- Description of the challenge -->
 
-# Stack part
+#Stack part
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
 
 Create a Stack class that has a top property. It creates an empty Stack when instantiated.
