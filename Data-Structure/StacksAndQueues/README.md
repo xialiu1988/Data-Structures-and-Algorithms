@@ -1,4 +1,4 @@
-#STACK and QUEUES
+# STACK and QUEUES
 
 <!-- Short summary or background information -->
 
@@ -10,6 +10,7 @@ Queue:  A Queue is very similar to the Stack data structure with one major diffe
 <!-- Description of the challenge -->
 
 #Stack part
+
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
 
 Create a Stack class that has a top property. It creates an empty Stack when instantiated.
@@ -34,6 +35,7 @@ Define a method called peek that does not take an argument and returns the value
 
 
 ## Approach & Efficiency
+
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 stack: pop()   T<-O(1)  s<-O(H)
        push()  T<-O(1)  s<-O(1)
