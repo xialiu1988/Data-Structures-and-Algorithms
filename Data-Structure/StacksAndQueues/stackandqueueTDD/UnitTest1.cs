@@ -76,9 +76,32 @@ namespace stackandqueueTDD
             Assert.True(stack.Top.Value == 34);
 
         }
+        [Fact]
+        public void CanGetPeek()
+        {
+            Node node = new Node(34);
+            Stack stack = new Stack(node);
+            stack.Push(13);
+            Assert.True(stack.Peek().Value==13);
 
+        }
+        [Fact]
+        public void CanGetPeekFromStack()
+        {
+            Node node = new Node(34);
+            Stack stack = new Stack(node);
+            Assert.True(stack.Peek().Value == 34);
 
+        }
+        [Fact]
+        public void CanGetPeekFromemptystack()
+        {
 
+            Stack stack = new Stack();
+
+            Assert.True(stack.Peek() == null);
+
+        }
 
         [Fact]
         public void CanEnqueueNodeToQueue()
@@ -154,6 +177,39 @@ namespace stackandqueueTDD
             queue.Dequeue();
 
             Assert.True(queue.Front == null);
+
+        }
+
+        [Fact]
+        public void CanGetPeekFromQueue()
+        {
+            Node node = new Node(34);
+            Queue queue = new Queue(node);
+
+            Assert.True(queue.Peek().Value==34);
+
+        }
+        [Fact]
+        public void CangetpeekfromQueue()
+        {
+            Node node = new Node(34);
+            Queue queue = new Queue(node);
+            queue.Dequeue();
+            Assert.True(queue.Peek()== null);
+
+        }
+
+
+        [Fact]
+        public void CangetpeekAfterEnqueueandDequeue()
+        {
+            Node node = new Node(34);
+            Queue queue = new Queue(node);
+            queue.Enqueue(13);
+            queue.Enqueue(56);
+            queue.Enqueue(0);
+            queue.Dequeue();
+            Assert.True(queue.Peek().Value == 13);
 
         }
     }
