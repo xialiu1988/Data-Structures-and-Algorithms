@@ -14,4 +14,4 @@ TABLE OF CONTENTS
 4.[Challenge:Merge](Challenges/MergeTwoLists)
 
 
-5.[Challenge:Queuewithstacks](Challenges/QueueWithStacks)
+5.[Challenge:Queuewithstacks](Challenges/queuewithstacks)
