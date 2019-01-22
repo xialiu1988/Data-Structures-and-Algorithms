@@ -45,4 +45,6 @@ queue: enqueue()  T<-O(1) s<-O(1)
        dequeue()  T<-O(1) s<-O(H)
 	   peek()     T<-O(1) s<-O(1)
 
+## Api
 
+All public access to the methods creatd in Stack and Queue.
