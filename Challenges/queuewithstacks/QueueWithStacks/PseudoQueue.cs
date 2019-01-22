@@ -44,23 +44,28 @@ namespace QueueWithStacks
 
         public void Print(Stack stack)
         {
-            Stack temp = new Stack();
-
-            while (stack.Top.Next != null)
+            Node current = stack.Top;
+            int counter = 0;
+            while (current.Next != null)
             {
-                temp.Push(stack.Pop().Value);
+                counter++;
+                current = current.Next;
+            }
+            counter++;
+
+            int[] arr = new int[counter];
+            current = stack.Top;
+            for(int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = current.Value;
+                current = current.Next;
             }
 
-            temp.Push(stack.Pop().Value);
-
-            while (temp.Top.Next != null)
+            for(int i = arr.Length-1; i >0; i--)
             {
-                Console.Write(temp.Top.Value + " " + "=>");
-                temp.Top = temp.Top.Next;
+                Console.Write(arr[i] + " " + "=>");
             }
-
-            Console.WriteLine(temp.Top.Value);
-            
+            Console.WriteLine("end");
         }
 
 
