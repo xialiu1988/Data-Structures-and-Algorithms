@@ -16,15 +16,23 @@ namespace QueueWithStacks
             stack.Push(20);
             stack.Push(32);
             stack.Push(2);
-            stack.Push(14);
-    
-            PseudoQueue pse = new PseudoQueue(stack);
-            pse.Print(stack);
-            
+           stack.Push(14);
+             PseudoQueue pse = new PseudoQueue(stack);
+            pse.Print(stack);           
             pse.Enqueque(68);
-            pse.Front = stack;
+           // pse.Front = stack;
             Console.WriteLine("+++++++++++++++++");
             pse.Print(stack);
+            Console.WriteLine("+++++++++++++++++");
+            Console.WriteLine("afterDEqueue");
+            pse.Dequeue();
+           // pse.Front = stack;
+            pse.Print(stack);
+            Console.WriteLine("+++++++++++++++++");
+            Console.WriteLine("afterDEqueue");
+            pse.Dequeue();
+            pse.Print(stack);
+
 
         }
     }

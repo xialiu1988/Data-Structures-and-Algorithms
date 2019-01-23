@@ -41,6 +41,17 @@ namespace QueueWithStacks
             Front.Push(tempNode3.Value);
         }
 
+        
+        public void Dequeue()
+        {
+          Node pop= Front.Pop();
+
+            Console.WriteLine(pop.Value);
+
+        }
+
+
+
 
         public void Print(Stack stack)
         {
@@ -61,11 +72,12 @@ namespace QueueWithStacks
                 current = current.Next;
             }
 
-            for(int i = arr.Length-1; i >0; i--)
+            for(int i = arr.Length-1; i >=0; i--)
             {
                 Console.Write(arr[i] + " " + "=>");
             }
             Console.WriteLine("end");
+            Front = stack;
         }
 
 
