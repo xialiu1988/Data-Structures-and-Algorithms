@@ -17,28 +17,32 @@ namespace QueuewithStacks
 
         public void Enqueque(int value)
         {
-            Stack temp = new Stack();
-            while (Front.Top.Next != null)
+            if (Front.Top == null) Front.Push(value);
+            else
             {
-                Node tempNode = Front.Pop();
-                temp.Push(tempNode.Value);
+                Stack temp = new Stack();
+                while (Front.Top.Next != null)
+                {
+                    Node tempNode = Front.Pop();
+                    temp.Push(tempNode.Value);
+                }
+                Node tempNode2 = Front.Pop();
+                temp.Push(tempNode2.Value);
+
+                //push the new node to the stack
+                Front.Push(value);
+
+                while (temp.Top.Next != null)
+                {
+                    Node tempNode = temp.Pop();
+
+                    Front.Push(tempNode.Value);
+
+                }
+                Node tempNode3 = temp.Pop();
+
+                Front.Push(tempNode3.Value);
             }
-            Node tempNode2 = Front.Pop();
-            temp.Push(tempNode2.Value);
-
-            //push the new node to the stack
-            Front.Push(value);
-
-            while (temp.Top.Next != null)
-            {
-                Node tempNode = temp.Pop();
-
-                Front.Push(tempNode.Value);
-
-            }
-            Node tempNode3 = temp.Pop();
-
-            Front.Push(tempNode3.Value);
         }
 
 
@@ -55,30 +59,40 @@ namespace QueuewithStacks
 
         public void Print(Stack stack)
         {
-            Node current = stack.Top;
-            int counter = 0;
-            while (current.Next != null)
+          
+                Node current = stack.Top;
+            if (current.Next == null)
             {
+                Console.WriteLine(current.Value);
+
+            }
+            else
+            {
+                int counter = 0;
+                while (current.Next != null)
+                {
+                    counter++;
+                    current = current.Next;
+                }
                 counter++;
-                current = current.Next;
-            }
-            counter++;
 
-            int[] arr = new int[counter];
-            current = stack.Top;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = current.Value;
-                current = current.Next;
-            }
+                int[] arr = new int[counter];
+                current = stack.Top;
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    arr[i] = current.Value;
+                    current = current.Next;
+                }
 
-            for (int i = arr.Length - 1; i >= 0; i--)
-            {
-                Console.Write(arr[i] + " " + "=>");
+                for (int i = arr.Length - 1; i >= 0; i--)
+                {
+                    Console.Write(arr[i] + " " + "=>");
+                }
+                Console.WriteLine("end");
+                Front = stack;
             }
-            Console.WriteLine("end");
-            Front = stack;
-        }
+            }
+        
 
 
         /// <summary>
