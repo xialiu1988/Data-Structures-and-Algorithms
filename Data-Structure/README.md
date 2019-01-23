@@ -3,3 +3,6 @@
 1.[Linked List](LinkedList)
 
 
+2.[stack and queue](StacksAndQueues)
+
+
