@@ -39,4 +39,4 @@ S<- O(1);
 Following is the whiteboard picture
 
 
-![img](../../Assets/pwithstack.jpg)
+![short](../../Assets/qwithstack.jpg)
