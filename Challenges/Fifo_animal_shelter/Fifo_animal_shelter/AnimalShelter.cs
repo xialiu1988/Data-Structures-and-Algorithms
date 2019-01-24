@@ -11,6 +11,7 @@ namespace Fifo_animal_shelter
         public Animal Front { get; set; }
         public Animal Rear { get; set; }
         public int Counter { get; set; }
+
         public AnimalShelter(Animal animal)
         {
             Front = animal;
@@ -80,6 +81,44 @@ namespace Fifo_animal_shelter
 
         }
 
+
+
+        public void PrintAnimalList()
+        {
+            if (list.Any())
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    Console.WriteLine(list[i].type);
+
+                }
+            }
+            else
+            {
+                while (Front.next != null)
+                {
+                    Animal temp = Front;
+                    Console.WriteLine(Front.type);
+                    Front = Front.next;
+                    list.Add(temp);
+                    temp.next = null;
+                }
+
+
+                Console.WriteLine(Front.type);
+                Animal temp4 = Front;
+                Front = Front.next;
+                list.Add(temp4);
+                temp4.next = null;
+
+                for (int i = 0; i < list.Count; i++)
+                {
+                    Enqueue(list[i].type);
+                    Counter--;
+                }
+
+            }
+        }
 
     }
 }
