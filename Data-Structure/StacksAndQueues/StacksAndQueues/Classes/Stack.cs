@@ -18,7 +18,10 @@ namespace StacksAndQueues.Classes
 
         }
         
-        //push()
+  /// <summary>
+  /// push a new value into the stack
+  /// </summary>
+  /// <param name="value"></param>
         public void Push(int value)
         {
             Node node = new Node(value);
@@ -27,7 +30,10 @@ namespace StacksAndQueues.Classes
 
         }
 
-
+        /// <summary>
+        /// pop a node from stack
+        /// </summary>
+        /// <returns></returns>
 
         public Node Pop()
         {
