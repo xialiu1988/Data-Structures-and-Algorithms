@@ -20,6 +20,8 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 
 
 T<-O(n)
+
+
 S<-O(n)
 
 
