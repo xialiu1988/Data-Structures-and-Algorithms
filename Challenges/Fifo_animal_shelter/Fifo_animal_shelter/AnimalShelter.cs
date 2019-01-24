@@ -19,9 +19,10 @@ namespace Fifo_animal_shelter
             Counter = 1;
         }
 
-
+      
         public void Enqueue(string animalType)
         {
+            
             Animal an = new Animal(animalType);
 
             Rear.next = an;
@@ -80,9 +81,9 @@ namespace Fifo_animal_shelter
               
             }
            
-            Animal notExsit = new Animal(pref);
-            Console.WriteLine($"Your request is null,no {notExsit.type} exsits in our shelter");
-            return notExsit;        
+ 
+            Console.WriteLine($"Your request is null,no {pref} exsits in our shelter");
+            return null;        
 
         }
 

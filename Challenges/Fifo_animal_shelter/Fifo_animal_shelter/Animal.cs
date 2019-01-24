@@ -11,6 +11,7 @@ namespace Fifo_animal_shelter
         public Animal(string typeAnimal)
         {
             type = typeAnimal;
+
         }
 
 
