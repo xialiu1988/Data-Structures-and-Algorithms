@@ -13,36 +13,35 @@ namespace Fifo_animal_shelter
         }
         public static void AnimalShelterWork()
         {
-            Animal a1 = new Animal("dog");
+            Animal a1 = new Animal("dog1");
             AnimalShelter WeHope = new AnimalShelter(a1);
-           WeHope.Enqueue("dog");
-            WeHope.Enqueue("cat");
-           WeHope.Enqueue("dog");
-            WeHope.Enqueue("cat");
-            WeHope.Enqueue("dog");
-            WeHope.Enqueue("dog");
-            WeHope.Enqueue("dog");
-            Console.WriteLine(WeHope.Counter);
-
+           WeHope.Enqueue("dog2");
+            WeHope.Enqueue("cat1");
+           WeHope.Enqueue("dog3");
+            WeHope.Enqueue("cat2");
+            WeHope.Enqueue("dog4");
+            WeHope.Enqueue("dog5");
+            WeHope.Enqueue("cat3");
+            Console.WriteLine($"We have {WeHope.Counter} animals left in our shelter");
             Console.WriteLine("==================");
+            Console.WriteLine("We have following animals available:");
+            WeHope.PrintAnimalList();
             Console.WriteLine("==================");
+            Animal adoptOne= WeHope.Dequeue("dog3");
+            Animal adopt2 = WeHope.Dequeue("cat1");
+            Animal adopt3 = WeHope.Dequeue("dog1");
             Console.WriteLine("==================");
-            Animal adoptOne= WeHope.Dequeue("cat");
-            Animal adopt2 = WeHope.Dequeue("cat");
-            Animal adopt3 = WeHope.Dequeue("bird");
+            Console.WriteLine("=======After  Adoption==========");
+            Console.WriteLine($"We have {WeHope.Counter} animals left in our shelter");
             Console.WriteLine("==================");
-            Console.WriteLine("===after==adoption==========");
-            Console.WriteLine("==================");
-            Console.WriteLine(WeHope.Counter);
+            Console.WriteLine("Here are the information of the adopted animals:");
             Console.WriteLine(adoptOne.type);
             Console.WriteLine(adopt2.type);
-            Console.WriteLine(adopt3);
+            Console.WriteLine(adopt3.type);     
             Console.WriteLine("==================");
             Console.WriteLine("==================");
-            Console.WriteLine("==================");
-  
-
-
+            Console.WriteLine("We have following animals available:");
+            WeHope.PrintAnimalList();
 
         }
     }
