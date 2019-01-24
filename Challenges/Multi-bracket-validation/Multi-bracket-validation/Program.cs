@@ -7,9 +7,10 @@ namespace Multi_bracket_validation
       public static void Main(string[] args)
         {
 
-            string s = "{{6789}}]]";
-         bool boo= MultiBracketValidation(s);
-            Console.WriteLine(s);
+            string s2 = "{{6789}}";
+            //string s2 = "{ (})";	
+         bool boo= MultiBracketValidation(s2);
+            Console.WriteLine(s2);
             Console.WriteLine("=============");
             if ( boo==true) { Console.WriteLine("True!"); }
 
