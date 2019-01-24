@@ -33,7 +33,7 @@ namespace Fifo_animal_shelter
 
         public Animal Dequeue(string pref)
         {
-           
+
             if (list.Any())
             {
                 for (int i = 0; i < list.Count; i++)
@@ -48,36 +48,41 @@ namespace Fifo_animal_shelter
                 }
             }
 
-          
-                if (Front.type == pref)
+            else
             {
-                Animal temp = Front;
-                Counter--;
+                if (Front.type == pref)
+                {
+                    Animal temp = Front;
+                    Counter--;
                     Front = Front.next;
                     temp.next = null;
                     return temp;
                 }
 
                 while (Front.next != null)
-            {
-                Animal temp = Front;
-                list.Add(temp);
-                Front = Front.next;
-                temp.next = null;
-               
-                         
-                if (Front.type == pref)
                 {
-                    Animal temp2 = Front;
-                    Counter--;
+                    Animal temp = Front;
+                    list.Add(temp);
+                    Front = Front.next;
+                    temp.next = null;
+
+
+                    if (Front.type == pref)
+                    {
+                        Animal temp2 = Front;
+                        Counter--;
                         Front = Front.next;
                         temp2.next = null;
                         return temp2;
                     }
-
+                    
                 }
-
-                return null;        
+              
+            }
+           
+            Animal notExsit = new Animal(pref);
+            Console.WriteLine($"Your request is null,no {notExsit.type} exsits in our shelter");
+            return notExsit;        
 
         }
 

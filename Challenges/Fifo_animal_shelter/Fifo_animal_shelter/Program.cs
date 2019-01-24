@@ -6,7 +6,6 @@ namespace Fifo_animal_shelter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             AnimalShelterWork();           
 
@@ -22,25 +21,22 @@ namespace Fifo_animal_shelter
             WeHope.Enqueue("dog4");
             WeHope.Enqueue("dog5");
             WeHope.Enqueue("cat3");
-            Console.WriteLine($"We have {WeHope.Counter} animals left in our shelter");
-            Console.WriteLine("==================");
-            Console.WriteLine("We have following animals available:");
+            Console.WriteLine($"We have {WeHope.Counter} animals left in our shelter:");
             WeHope.PrintAnimalList();
             Console.WriteLine("==================");
-            Animal adoptOne= WeHope.Dequeue("dog3");
-            Animal adopt2 = WeHope.Dequeue("cat1");
-            Animal adopt3 = WeHope.Dequeue("dog1");
-            Console.WriteLine("==================");
-            Console.WriteLine("=======After  Adoption==========");
-            Console.WriteLine($"We have {WeHope.Counter} animals left in our shelter");
+            Console.WriteLine("======= Adopting==========");
             Console.WriteLine("==================");
             Console.WriteLine("Here are the information of the adopted animals:");
+            Animal adoptOne= WeHope.Dequeue("dog3");
             Console.WriteLine(adoptOne.type);
+            Animal adopt2 = WeHope.Dequeue("cat1");
             Console.WriteLine(adopt2.type);
-            Console.WriteLine(adopt3.type);     
-            Console.WriteLine("==================");
-            Console.WriteLine("==================");
-            Console.WriteLine("We have following animals available:");
+            Animal adopt3 = WeHope.Dequeue("dog1");
+            Console.WriteLine(adopt3.type);
+            Animal adopt4 = WeHope.Dequeue("bird");
+            Animal adopt5 = WeHope.Dequeue("lizard");
+            Console.WriteLine("==================");           
+            Console.WriteLine($"We have {WeHope.Counter} animals left in our shelter:");
             WeHope.PrintAnimalList();
 
         }

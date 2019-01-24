@@ -13,5 +13,6 @@ namespace Fifo_animal_shelter
             type = typeAnimal;
         }
 
+
     }
 }
