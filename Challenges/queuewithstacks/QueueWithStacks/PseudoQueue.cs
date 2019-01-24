@@ -76,7 +76,7 @@ namespace QueueWithStacks
             {
                 Console.Write(arr[i] + " " + "=>");
             }
-            Console.WriteLine("end");
+            Console.WriteLine("Front");
             Front = stack;
         }
 
