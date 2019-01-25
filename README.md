@@ -17,4 +17,8 @@ TABLE OF CONTENTS
 5.[Challenge:QueueWithStacks](Challenges/QueuewithStacks)
 
 
-6.[Challenge:Multi-Brackets-Validation](Challenges/Multi-bracket-validation)
+6.[Challenge:FiFOAnimalShelfter](Challenges/Fifo_animal_shelter)
+
+
+7.[Challenge:Multi-Brackets-Validation](Challenges/Multi-bracket-validation)
+
