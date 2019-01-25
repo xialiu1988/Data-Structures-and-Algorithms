@@ -39,7 +39,8 @@ Curly Brackets : {}
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 
-
+T<-O(n)
+S<-O(H)
 
 
 For example: 
@@ -52,3 +53,5 @@ For example:
 
 
 ## Solution
+
+![img](../../Assets/multi.JPG)
