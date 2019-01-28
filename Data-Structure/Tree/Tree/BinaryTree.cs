@@ -53,7 +53,7 @@ namespace Tree
             if (node != null)
             {
                 inOrder(node.LeftChild);
-                Console.Write(node.Value);
+                Console.WriteLine(node.Value);
                 inOrder(node.RightChild);
             }
 
