@@ -23,6 +23,7 @@ namespace Tree
             bb.preOrder(bb.Root);
             Console.WriteLine("========inOrder=========");
             bb.inOrder(bb.Root);
+            Console.WriteLine();
             Console.WriteLine("=====postOrder=======");
             bb.postOrder(bb.Root);
 

@@ -92,12 +92,14 @@ namespace Tree
         }
 
 
+   
         public void inOrder(Node node)
         {
             if (node != null)
             {
                 inOrder(node.LeftChild);
                 Console.WriteLine(node.Value);
+         
                 inOrder(node.RightChild);
             }
 

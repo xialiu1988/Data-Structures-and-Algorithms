@@ -47,13 +47,13 @@ namespace Tree
         /// inorder root comes when left part has done
         /// </summary>
         /// <param name="node"></param>
-
+       
         public void inOrder(Node node)
         {
             if (node != null)
             {
                 inOrder(node.LeftChild);
-                Console.WriteLine(node.Value);        
+                Console.Write(node.Value);
                 inOrder(node.RightChild);
             }
 
