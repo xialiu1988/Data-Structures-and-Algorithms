@@ -6,3 +6,6 @@
 2.[stack and queue](StacksAndQueues)
 
 
+3.[Tree](Tree)
+
+
