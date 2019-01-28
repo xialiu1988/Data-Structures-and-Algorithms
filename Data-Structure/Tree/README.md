@@ -54,8 +54,20 @@ When the value not exsits
 
 Big O
 
-T<-
-S<-
+Binary search Tree:
+
+T<-O(logn)
+
+
+S<-O(h)
+
+
+Binary Tree:
+
+T<-O(logn)
+
+
+S<-O(h)
 
 ## API
 <!-- Description of each method publicly available in each of your trees -->
