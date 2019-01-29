@@ -7,10 +7,19 @@ namespace FizzBuzzTree
        public static void Main(string[] args)
         {
            Tree tr= GetaTree();
-            Print(tr.preOrder());
+            Object[] trr = tr.preOrder();
+            foreach (Object value in trr)
+            {
+                Console.WriteLine($"{value}");
+            }
+
             Console.WriteLine("++++++++++++++++");
-            FizzBuzzTree(tr.Root);
-            Print(tr.preOrder());
+
+            foreach (Object value in trr)
+            {
+                Console.WriteLine($"{value}");
+            }
+
 
         }
 
@@ -56,14 +65,7 @@ namespace FizzBuzzTree
 
 
         }
-        public static void Print(Object[] tree)
-        {
-            foreach (Object value in tree)
-            {
-                Console.WriteLine($"{value}");
-            }
-
-        }
+      
 
 
     }
