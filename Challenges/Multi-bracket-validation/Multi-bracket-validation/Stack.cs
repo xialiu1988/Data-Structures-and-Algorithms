@@ -2,33 +2,30 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StacksAndQueues.Classes
+namespace Multi_bracket_validation
 {
-  public  class Stack
+  public class Stack
     {
-        public Node Top { get; set;}
-
-        public Stack(Node node)
-        {
-            Top = node;
-        }
-        //create an empty stack
+        public Node Top { get; set; }
+        /// <summary>
+        /// just create an empty stack constructor
+        /// </summary>
         public Stack()
         {
 
         }
-        
-  /// <summary>
-  /// push a new value into the stack
-  /// </summary>
-  /// <param name="value"></param>
-        public void Push(int value)
-        {
-            Node node = new Node(value);
-            node.Next = Top;
-            Top = node;
 
+        public void Push(char c)
+        {
+            Node node = new Node(c);
+            if (Top == null) { Top = node; }
+            else
+            {
+                node.Next = Top;
+                Top = node;
+            }
         }
+
 
         /// <summary>
         /// pop a node from stack
@@ -44,12 +41,11 @@ namespace StacksAndQueues.Classes
 
         }
 
-
-
         public Node Peek()
         {
             return Top;
         }
-    }
 
+
+    }
 }
