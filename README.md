@@ -13,6 +13,15 @@ TABLE OF CONTENTS
 
 4.[Challenge:Merge](Challenges/MergeTwoLists)
 
+
 5.[Challenge:QueueWithStacks](Challenges/QueuewithStacks)
 
-6.[Challenge:FizzBuzzTree](Challenges/FizzBuzzTree)
+
+6.[Challenge:FiFOAnimalShelfter](Challenges/Fifo_animal_shelter)
+
+
+7.[Challenge:Multi-Brackets-Validation](Challenges/Multi-bracket-validation)
+
+8.[Challenge:FizzBuzzTree](Challenges/FizzBuzzTree)
+
+
