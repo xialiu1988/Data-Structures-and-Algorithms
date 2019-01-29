@@ -22,3 +22,6 @@ TABLE OF CONTENTS
 
 7.[Challenge:Multi-Brackets-Validation](Challenges/Multi-bracket-validation)
 
+8.[Challenge:FizzBuzzTree](Challenges/FizzBuzzTree)
+
+
