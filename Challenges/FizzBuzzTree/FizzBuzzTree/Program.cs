@@ -6,12 +6,15 @@ namespace FizzBuzzTree
     {
        public static void Main(string[] args)
         {
-            GetaTree();
-         
+           Tree tr= GetaTree();
+            Print(tr.preOrder());
+            Console.WriteLine("++++++++++++++++");
+            FizzBuzzTree(tr.Root);
+            Print(tr.preOrder());
 
         }
 
-        public static void GetaTree()
+        public static Tree GetaTree()
         {
             Tree  tr = new Tree();
             tr.Root = new TreeNode(9);
@@ -21,10 +24,7 @@ namespace FizzBuzzTree
             tr.Root.LeftChild.RightChild = new TreeNode(18);
             tr.Root.RightChild.LeftChild = new TreeNode(14);
             tr.Root.RightChild.RightChild = new TreeNode(4);
-            Print(tr.preOrder());
-            Console.WriteLine("++++++++++++++++");
-            FizzBuzzTree(tr.Root);
-            Print(tr.preOrder());
+            return tr;
         }
 
         public static void FizzBuzzTree(TreeNode node)
