@@ -14,3 +14,5 @@ TABLE OF CONTENTS
 4.[Challenge:Merge](Challenges/MergeTwoLists)
 
 5.[Challenge:QueueWithStacks](Challenges/QueuewithStacks)
+
+6.[Challenge:FizzBuzzTree](Challenges/FizzBuzzTree)
