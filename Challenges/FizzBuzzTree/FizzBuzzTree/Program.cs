@@ -2,11 +2,11 @@
 
 namespace FizzBuzzTree
 {
-   public class Program
+    public class Program
     {
-       public static void Main(string[] args)
+        public static void Main(string[] args)
         {
-           Tree tr= GetaTree();
+            Tree tr = GetaTree();
             Object[] trr = tr.preOrder();
             foreach (Object value in trr)
             {
@@ -15,20 +15,17 @@ namespace FizzBuzzTree
 
             Console.WriteLine("++++++++++++++++");
 
-            foreach (Object value in trr)
-            {
-                Console.WriteLine($"{value}");
-            }
-
+            FizzBuzzTree(tr.Root);
+         
 
         }
 
         public static Tree GetaTree()
         {
-            Tree  tr = new Tree();
+            Tree tr = new Tree();
             tr.Root = new TreeNode(9);
             tr.Root.LeftChild = new TreeNode(3);
-            tr.Root .RightChild= new TreeNode(15);
+            tr.Root.RightChild = new TreeNode(15);
             tr.Root.LeftChild.LeftChild = new TreeNode(20);
             tr.Root.LeftChild.RightChild = new TreeNode(18);
             tr.Root.RightChild.LeftChild = new TreeNode(14);
@@ -42,30 +39,30 @@ namespace FizzBuzzTree
             if (node != null)
             {
 
-                if(Convert.ToInt32(node.Value) % 15 == 0)
+                if (Convert.ToInt32(node.Value) % 15 == 0)
                 {
-                    node.Value = "FizzBuzz";
+                   Console.WriteLine( "FizzBuzz");
                 }
-                else if(Convert.ToInt32(node.Value) % 5 == 0)
+                else if (Convert.ToInt32(node.Value) % 5 == 0)
                 {
-                    node.Value = "Buzz";
+                    Console.WriteLine("Buzz");
                 }
                 else if (Convert.ToInt32(node.Value) % 3 == 0)
                 {
-                    node.Value = "Fizz";
+                    Console.WriteLine("Fizz");
                 }
                 else
                 {
-                    node.Value = node.Value;
+                    Console.WriteLine(node.Value);
                 }
 
                 FizzBuzzTree(node.LeftChild);
                 FizzBuzzTree(node.RightChild);
             }
 
-
+  
         }
-      
+
 
 
     }

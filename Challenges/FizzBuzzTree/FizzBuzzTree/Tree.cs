@@ -4,14 +4,14 @@ using System.Text;
 
 namespace FizzBuzzTree
 {
-   public class Tree
+    public class Tree
     {
-        public TreeNode  Root { get; set; }
+        public TreeNode Root { get; set; }
 
 
 
 
-        public Tree( )
+        public Tree()
         {
             Root = null;
 
@@ -22,7 +22,7 @@ namespace FizzBuzzTree
             Root = node;
 
         }
-       
+
 
 
         public List<Object> traverseTree(TreeNode node, List<Object> values)
