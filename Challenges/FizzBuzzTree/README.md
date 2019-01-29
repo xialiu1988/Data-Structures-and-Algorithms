@@ -6,6 +6,7 @@ If the value is divisible by 5, replace the value with “Buzz”
 If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 
 
+
 #Approch and Effiency
 
 Big o
@@ -13,7 +14,9 @@ Big o
 T<- O(n)
 S<- O(H)
 
+
 #whiteboard
+
 
 
 ![img](../../Assets/fzb.png)
