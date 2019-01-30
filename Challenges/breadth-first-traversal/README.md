@@ -8,3 +8,13 @@ Without utilizing any of the built-in methods available to your language, traver
 
 #Approach and Effiency
 
+Big O;
+
+T<-O(n)
+S<-O(W)
+
+
+#WhiteBoard
+
+
+![img](../../Assets/IMG-9712.JPG)

@@ -6,4 +6,10 @@
     <RootNamespace>breadth_first_traversal</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="StacksAndQueues">
+      <HintPath>..\..\..\Data-Structure\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.2\StacksAndQueues.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

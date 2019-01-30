@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 namespace breadth_first_traversal
 {
    public class Program
@@ -12,7 +13,7 @@ namespace breadth_first_traversal
 
             Tree tr = GetATree();
 
-            Breathfirst(tr.Root);
+          List<TreeNode>list=Breathfirst(tr.Root);
             Console.WriteLine();
 
         }
@@ -36,59 +37,40 @@ namespace breadth_first_traversal
         }
 
 
-        public static void Breathfirst(TreeNode root)
+
+        public static List<TreeNode> Breathfirst(TreeNode root)
         {
-            int h = height(root);
+            List<TreeNode> list = new List<TreeNode>();
+            Queue<TreeNode> q = new Queue<TreeNode>();
+            q.Enqueue(root);
+            int counter = 1;
 
-            for (int i = 1; i <= h; i++)
-            {
-                printthenthLevel(root, i);
-            }
-        }
+          // while loop to make sure the queue is not empty,print out the nodes'vlaues,if empty stop
 
-        public static void printthenthLevel(TreeNode root,int level)
-        {
-            if (root == null)
+            while (q.Count>0)
             {
-                return;
-            }
-
-            if (level == 1)
-            {
-                Console.Write(root.Val + " ");
-            }
-            else if (level > 1)
-            {
-                printthenthLevel(root.LeftChild, level - 1);
-                printthenthLevel(root.RightChild, level - 1);
-            }
-        }
-
-      
-
-        public static int height(TreeNode root)
-        {
-            if (root == null)
-            {
-                return 0;
-            }
-            else
-            {
+            
+                TreeNode n = (q.Dequeue());
+                Console.WriteLine(counter+":"+n.Val);
+                list.Add(n);
+                counter++;
+                if (n.LeftChild != null)
+                { q.Enqueue(n.LeftChild);
            
-                int lheight = height(root.LeftChild);
-                int rheight = height(root.RightChild);
-
+                }
+                if (n.RightChild != null)
+                {
+                    q.Enqueue(n.RightChild);
    
-                if (lheight > rheight)
-                {
-                    return (lheight + 1);
                 }
-                else
-                {
-                    return (rheight + 1);
-                }
+              
             }
+
+            return list;
+
+
         }
+
 
     }
 }
