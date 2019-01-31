@@ -6,17 +6,33 @@ namespace find_maximum_value_binary_tree
 {
     public class Program
     {
+        public static List<TreeNode> list = new List<TreeNode>();
         public static void Main(string[] args)
         {
             Tree tr = GetAtree();
             tr.preOrder(tr.Root);
             Console.WriteLine("======================");
             Console.WriteLine();
-            int max = 0;
-            GetMax(tr.Root);
-            //  Console.WriteLine("The maximum value in the tree is:" + " " + b);
-        }
 
+            //get the new list from GetAllValues;
+            List<TreeNode> group = GetAllValues(tr.Root);
+
+            int temp = 0;//set a temp value, everytime value larger than this,update it and it will be the maximum value in the end
+            //for loop go through the list we get and find the biggest value
+            for (int i = 0; i < group.Count; i++)
+            {            
+                if (list[i].Value > temp)
+                {
+                    temp = list[i].Value;
+                }
+            } 
+            Console.WriteLine("The maximum value this tree is:"+ " "+ temp);
+
+        }
+        /// <summary>
+        /// create a new tree
+        /// </summary>
+        /// <returns></returns>
         public static Tree GetAtree()
         {
             Tree tr = new Tree();
@@ -30,30 +46,25 @@ namespace find_maximum_value_binary_tree
 
             return tr;
         }
+        /// <summary>
+        /// using recursive method to add all the nodess' value  to the list we created very beginning
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns>a new list </returns>
 
-
-        public static void GetMax(TreeNode root)
+        public static List<TreeNode> GetAllValues(TreeNode node)
         {
-            Stack<TreeNode> s = new Stack<TreeNode>();
-            s.Push(root);
-            
-            while (s!=null)
+
+            if (node != null)
             {
-                TreeNode nn = s.Pop();
-                if (nn.LeftChild.Value > nn.Value)
-                {
-                    s.Push(nn.LeftChild);
-                }
-                else if (nn.RightChild.Value > nn.Value)
-                {
-                    s.Push(nn.RightChild);
-                }
+                list.Add(node);
+
+                GetAllValues(node.LeftChild);
+                GetAllValues(node.RightChild);
+
             }
-
-            Console.WriteLine(s.Peek());
-
+            return list;
         }
-
     }
-}
 
+}

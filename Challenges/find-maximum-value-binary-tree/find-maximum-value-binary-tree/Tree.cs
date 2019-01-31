@@ -13,8 +13,10 @@ namespace find_maximum_value_binary_tree
             Root = null;
         }
   
-          
-       
+          /// <summary>
+          /// travesal from top to bottom
+          /// </summary>
+          /// <param name="node"></param>          
 
         public void preOrder(TreeNode node)
         {
