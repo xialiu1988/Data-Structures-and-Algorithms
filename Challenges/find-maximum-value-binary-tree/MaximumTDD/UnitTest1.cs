@@ -10,33 +10,30 @@ namespace MaximumTDD
         [Fact]
         public void CanFindMax()
         {
-            Tree tr = Program.GetAtree();
-            List<TreeNode> group = Program.GetAllValues(tr.Root);
 
-            Assert.True( group[3].Value==330);
-            Assert.True(group[3].Value > group[2].Value);
-            Assert.True(group[3].Value > group[5].Value);
-
+            Tree tr = new Tree();
+            tr.Root = new TreeNode(54);
+         
+            Assert.Equal(54, Program.getMax(tr));
         }
+
         [Fact]
         public void CanFindValue()
         {
-            Tree tr = Program.GetAtree();
-            List<TreeNode> group = Program.GetAllValues(tr.Root);
-
-            Assert.True(group[3].Value == 330);
-            Assert.True(group[3].Value > group[1].Value);
-            Assert.True(group[3].Value > group[4].Value);
-
+            Tree tr2 = new Tree();
+            tr2.Root = new TreeNode(54);
+            tr2.Root.LeftChild = new TreeNode(4);
+            tr2.Root.LeftChild.LeftChild = new TreeNode(10);
+            int bb = Program.getMax(tr2);
+            Assert.True(bb == 54);
         }
+
         [Fact]
         public void CangetValue()
         {
-            Tree tr = Program.GetAtree();
-            List<TreeNode> group = Program.GetAllValues(tr.Root);
-
-            Assert.True(group[3].Value == 330);
-            Assert.True(group[3].Value > group[6].Value);
+            Tree tr3 = new Tree(); 
+            tr3.Root = new TreeNode(4);          
+            Assert.Equal(4, Program.getMax(tr3));
 
         }
     }
