@@ -7,27 +7,15 @@ namespace find_maximum_value_binary_tree
     public class Program
     {
         public static List<TreeNode> list = new List<TreeNode>();
+
         public static void Main(string[] args)
         {
             Tree tr = GetAtree();
             tr.preOrder(tr.Root);
             Console.WriteLine("======================");
             Console.WriteLine();
-
-            //get the new list from GetAllValues;
-            List<TreeNode> group = GetAllValues(tr.Root);
-
-            int temp = 0;//set a temp value, everytime value larger than this,update it and it will be the maximum value in the end
-            //for loop go through the list we get and find the biggest value
-            for (int i = 0; i < group.Count; i++)
-            {            
-                if (list[i].Value > temp)
-                {
-                    temp = list[i].Value;
-                }
-            } 
-            Console.WriteLine("The maximum value this tree is:"+ " "+ temp);
-
+            int b = getMax(tr);
+            Console.WriteLine("The maximum value in this tree is:" + " " + b);
         }
         /// <summary>
         /// create a new tree
@@ -40,7 +28,7 @@ namespace find_maximum_value_binary_tree
             tr.Root.LeftChild = new TreeNode(100);
             tr.Root.RightChild = new TreeNode(27);
             tr.Root.LeftChild.LeftChild = new TreeNode(48);
-            tr.Root.LeftChild.RightChild = new TreeNode(330);
+            tr.Root.LeftChild.RightChild = new TreeNode(30);
             tr.Root.RightChild.LeftChild = new TreeNode(201);
             tr.Root.RightChild.RightChild = new TreeNode(43);
 
@@ -64,6 +52,22 @@ namespace find_maximum_value_binary_tree
 
             }
             return list;
+        }
+
+
+        public static int getMax(Tree tr)
+        {
+            List<TreeNode> group = GetAllValues(tr.Root);
+            int temp = 0;//set a temp value, everytime value larger than this,update it and it will be the maximum value in the end
+            //for loop go through the list we get and find the biggest value
+            for (int i = 0; i < group.Count; i++)
+            {
+                if (list[i].Value > temp)
+                {
+                    temp = list[i].Value;
+                }
+            }
+            return temp;
         }
     }
 
