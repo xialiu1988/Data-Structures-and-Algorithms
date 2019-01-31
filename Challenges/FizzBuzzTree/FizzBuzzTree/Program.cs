@@ -1,9 +1,15 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace FizzBuzzTree
 {
     public class Program
-    {
+    {/// <summary>
+    /// creat a list to store the new tree after we change the value;
+    /// </summary>
+        public static List<TreeNode> list = new List<TreeNode>();
+
         public static void Main(string[] args)
         {
             Tree tr = GetaTree();
@@ -15,11 +21,17 @@ namespace FizzBuzzTree
 
             Console.WriteLine("++++++++++++++++");
 
-            FizzBuzzTree(tr.Root);
-         
+          List<TreeNode> groups= FizzBuzzTree(tr.Root);
+            foreach (TreeNode nd in groups)
+            {
+                Console.WriteLine($" {nd.Value} ");
+            }
 
         }
-
+        /// <summary>
+        /// create a tree
+        /// </summary>
+        /// <returns>tree with values</returns>
         public static Tree GetaTree()
         {
             Tree tr = new Tree();
@@ -32,35 +44,44 @@ namespace FizzBuzzTree
             tr.Root.RightChild.RightChild = new TreeNode(4);
             return tr;
         }
-
-        public static void FizzBuzzTree(TreeNode node)
+        /// <summary>
+        /// pass in a node and see if it meets any conditions inside the block,and change the value if the meet the condition
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns>a list type of TreeNode objects with new values</returns>
+        public static List<TreeNode> FizzBuzzTree(TreeNode node)
         {
 
             if (node != null)
             {
+                
+                    if ((int)node.Value % 15 == 0)
+                    {
+                        node.Value = "FizzBuzz";
+                    }
+                    else if ((int)node.Value% 5 == 0)
+                    {
+                        node.Value = "Buzz";
+                    }
+                    else if ((int)node.Value % 3 == 0)
+                    {
+                        node.Value = "Fizz";
+                    }
+                list.Add(node);
 
-                if (Convert.ToInt32(node.Value) % 15 == 0)
+                if (node.LeftChild != null)
                 {
-                   Console.WriteLine( "FizzBuzz");
+                    FizzBuzzTree(node.LeftChild);
                 }
-                else if (Convert.ToInt32(node.Value) % 5 == 0)
+                if (node.RightChild != null)
                 {
-                    Console.WriteLine("Buzz");
-                }
-                else if (Convert.ToInt32(node.Value) % 3 == 0)
-                {
-                    Console.WriteLine("Fizz");
-                }
-                else
-                {
-                    Console.WriteLine(node.Value);
+                    FizzBuzzTree(node.RightChild);
                 }
 
-                FizzBuzzTree(node.LeftChild);
-                FizzBuzzTree(node.RightChild);
+
             }
 
-  
+            return list;
         }
 
 
