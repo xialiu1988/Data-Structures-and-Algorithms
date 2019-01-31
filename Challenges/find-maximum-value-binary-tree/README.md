@@ -20,5 +20,3 @@ S<- O(H)
 ![img](../../Assets/IMG-9713.JPG)
 
 
-
-![img](../../Assets/IMG-9710.JPG)
