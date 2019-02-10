@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOddNum-BST", "SumOddNum-BST\SumOddNum-BST.csproj", "{7C66B0A2-0DDD-422F-BB96-F2F8E0C2F1D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOddNum-BST", "SumOddNum-BST\SumOddNum-BST.csproj", "{7C66B0A2-0DDD-422F-BB96-F2F8E0C2F1D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfOddTDD", "SumOfOddTDD\SumOfOddTDD.csproj", "{C0AD4A76-D824-42A7-8BD7-DE9BDC6353FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7C66B0A2-0DDD-422F-BB96-F2F8E0C2F1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C66B0A2-0DDD-422F-BB96-F2F8E0C2F1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C66B0A2-0DDD-422F-BB96-F2F8E0C2F1D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0AD4A76-D824-42A7-8BD7-DE9BDC6353FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AD4A76-D824-42A7-8BD7-DE9BDC6353FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AD4A76-D824-42A7-8BD7-DE9BDC6353FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AD4A76-D824-42A7-8BD7-DE9BDC6353FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
