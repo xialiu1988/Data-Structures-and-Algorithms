@@ -28,6 +28,11 @@ TABLE OF CONTENTS
 
 9.[Challenge:breadth-first-traversal](Challenges/breadth-first-traversal)
 
+
 10.[Challenge: find-maximum-value-binary-tree](Challenges/find-maximum-value-binary-tree)
+
+
+11.[Challenge: Sum Of Odd Numbers in Binary-Search-Tree](Challenges/SumOddNum-BST)
+
 
 
