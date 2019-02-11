@@ -35,4 +35,9 @@ TABLE OF CONTENTS
 11.[Challenge: Sum Of Odd Numbers in Binary-Search-Tree](Challenges/SumOddNum-BST)
 
 
+12.[Challenge: CalculateHeightOfBinaryTree](Challenges/CalculateHeightOfBinaryTree)
+
+
+
+
 
