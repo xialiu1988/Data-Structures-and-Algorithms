@@ -11,6 +11,7 @@ namespace CalculateHeightOfBinaryTree
             tr.preorder(tr.Root);
             int res = CalculateBinaryTreeHeight(tr.Root);
             Console.WriteLine($"the tree 's  height is {res} ");
+         
         }
 
         public static Tree GetATree()

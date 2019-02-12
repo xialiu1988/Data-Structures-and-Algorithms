@@ -38,6 +38,9 @@ TABLE OF CONTENTS
 12.[Challenge: CalculateHeightOfBinaryTree](Challenges/CalculateHeightOfBinaryTree)
 
 
+13.[Challenge: Check if a binarytree is Balanced](Challenges/CheckifabinarytreeisBalanced)
+
+
 
 
 
