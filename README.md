@@ -59,4 +59,5 @@ TABLE OF CONTENTS
 19.[Challenge:Implement a Stack and a Queue using an Array](Challenges/ImplementaStackandaQueueusinganArray)
 
 
+20.[Challenge:combinationsbalancedparentheses](Challenges/combinationsbalancedparentheses)
 
