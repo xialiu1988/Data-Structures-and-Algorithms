@@ -4,7 +4,9 @@ using System.Text;
 
 namespace ImplementaStackandaQueueusinganArray
 {
-    class Queue
+   public class Queue
     {
+
+
     }
 }
