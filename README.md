@@ -45,3 +45,7 @@ TABLE OF CONTENTS
 
 
 15.[Challenge: Check characters in a string are unique](Challenges/charactersinastringareunique)
+
+
+16.[Challenge: Remove duplicated values from a linked list ](Challenges/Removeduplicatedvaluesfromalinked list)
+
