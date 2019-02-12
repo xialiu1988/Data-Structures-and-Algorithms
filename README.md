@@ -49,3 +49,7 @@ TABLE OF CONTENTS
 
 16.[Challenge: Remove duplicated values from a linked list ](Challenges/Removeduplicatedvaluesfromalinked list)
 
+
+17.[Challenge: Remove duplicated values from a string ](Challenges/RemoveDuplicateValueFromAString)
+
+
