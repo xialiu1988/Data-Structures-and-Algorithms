@@ -53,3 +53,10 @@ TABLE OF CONTENTS
 17.[Challenge: Remove duplicated values from a string ](Challenges/RemoveDuplicateValueFromAString)
 
 
+18.[Challenge: ShuffleALinkedList](Challenges/ShuffleALinkedList)
+
+
+19.[Challenge:Implement a Stack and a Queue using an Array](Challenges/ImplementaStackandaQueueusinganArray)
+
+
+
