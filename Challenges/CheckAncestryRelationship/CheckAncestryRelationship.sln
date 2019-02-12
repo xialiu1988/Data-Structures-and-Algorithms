@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckAncestryRelationship", "CheckAncestryRelationship\CheckAncestryRelationship.csproj", "{2A86AC0D-5DAB-4558-990F-5D77C821AB98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A86AC0D-5DAB-4558-990F-5D77C821AB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A86AC0D-5DAB-4558-990F-5D77C821AB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A86AC0D-5DAB-4558-990F-5D77C821AB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A86AC0D-5DAB-4558-990F-5D77C821AB98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE0AC7E7-B482-47F7-BC5A-62B5FB4A36F3}
+	EndGlobalSection
+EndGlobal

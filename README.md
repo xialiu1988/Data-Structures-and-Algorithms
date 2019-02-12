@@ -35,4 +35,28 @@ TABLE OF CONTENTS
 11.[Challenge: Sum Of Odd Numbers in Binary-Search-Tree](Challenges/SumOddNum-BST)
 
 
+12.[Challenge: CalculateHeightOfBinaryTree](Challenges/CalculateHeightOfBinaryTree)
+
+
+13.[Challenge: Check if a binarytree is Balanced](Challenges/CheckifabinarytreeisBalanced)
+
+
+14.[Challenge: Check  Ancestry Relationship](Challenges/CheckAncestryRelationship)
+
+
+15.[Challenge: Check characters in a string are unique](Challenges/charactersinastringareunique)
+
+
+16.[Challenge: Remove duplicated values from a linked list ](Challenges/Removeduplicatedvaluesfromalinked list)
+
+
+17.[Challenge: Remove duplicated values from a string ](Challenges/RemoveDuplicateValueFromAString)
+
+
+18.[Challenge: ShuffleALinkedList](Challenges/ShuffleALinkedList)
+
+
+19.[Challenge:Implement a Stack and a Queue using an Array](Challenges/ImplementaStackandaQueueusinganArray)
+
+
 
