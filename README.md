@@ -43,3 +43,5 @@ TABLE OF CONTENTS
 
 14.[Challenge: Check  Ancestry Relationship](Challenges/CheckAncestryRelationship)
 
+
+15.[Challenge: Check characters in a string are unique](Challenges/charactersinastringareunique)
