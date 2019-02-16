@@ -8,9 +8,9 @@ Implement a method with the following signature bool IsAncestor(int A, int B, No
 #Approach and Efficiency
 BIGO
 
-T->O()
-S->O()
+T->O(w)
+S->O(n)
 
 #Image
 
-![image]()
+![image](IMG-9760.JPG)
