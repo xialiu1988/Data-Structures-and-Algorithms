@@ -39,9 +39,9 @@ namespace CalculateHeightOfBinaryTree
                 int rheight = CalculateBinaryTreeHeight(root.RightChild);
                 if (lheight > rheight)
                 {
-                    return (lheight + 1);
+                    return (lheight +1);
                 }
-                else return ( rheight + 1);
+                else return ( rheight+1 );
             }
 
         }
