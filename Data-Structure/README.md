@@ -9,3 +9,6 @@
 3.[Tree](Tree)
 
 
+4[Insertion Sort](Insertion-Sort)
+
+
