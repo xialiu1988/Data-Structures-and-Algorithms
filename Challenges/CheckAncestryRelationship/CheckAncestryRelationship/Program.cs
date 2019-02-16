@@ -14,7 +14,10 @@ namespace CheckAncestryRelationship
         }
 
 
-
+        /// <summary>
+        /// create a tree
+        /// </summary>
+        /// <returns></returns>
         public static Tree GetATree()
         {
             Tree tr = new Tree();
