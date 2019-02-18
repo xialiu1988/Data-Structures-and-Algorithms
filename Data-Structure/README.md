@@ -9,6 +9,9 @@
 3.[Tree](Tree)
 
 
-4[Insertion Sort](Insertion-Sort)
+4.[Insertion Sort](Insertion-Sort)
+
+
+5.[Hash table](HashTable)
 
 
