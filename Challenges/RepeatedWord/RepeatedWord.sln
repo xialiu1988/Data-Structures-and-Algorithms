@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWord", "RepeatedWord\RepeatedWord.csproj", "{0A239CA4-CE5C-4E52-A7F8-D995D1161D43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repeatedwordTDD", "repeatedwordTDD\repeatedwordTDD.csproj", "{06C96B9C-0E5F-4C58-9A3E-AFDCA40C3296}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0A239CA4-CE5C-4E52-A7F8-D995D1161D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A239CA4-CE5C-4E52-A7F8-D995D1161D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A239CA4-CE5C-4E52-A7F8-D995D1161D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C96B9C-0E5F-4C58-9A3E-AFDCA40C3296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C96B9C-0E5F-4C58-9A3E-AFDCA40C3296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C96B9C-0E5F-4C58-9A3E-AFDCA40C3296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C96B9C-0E5F-4C58-9A3E-AFDCA40C3296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
