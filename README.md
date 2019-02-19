@@ -56,8 +56,7 @@ TABLE OF CONTENTS
 18.[Challenge: ShuffleALinkedList](Challenges/ShuffleALinkedList)
 
 
-19.[Challenge:Implement a Stack and a Queue using an Array](Challenges/ImplementaStackandaQueueusinganArray)
+19.[Challenge: repeated word](Challenges/RepeatedWord)
 
 
-20.[Challenge:combinationsbalancedparentheses](Challenges/combinationsbalancedparentheses)
 

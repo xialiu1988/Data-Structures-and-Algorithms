@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ImplementaStackandaQueueusinganArray
+namespace RepeatedWord
 {
     class Program
     {

@@ -24,7 +24,7 @@ namespace HashTable
             Console.WriteLine("==========");
             Console.WriteLine($"what is value paired with key 2? {ht.get(2)}");
             Console.WriteLine("==========");
-            Console.WriteLine($"what is value paired with key 11? {ht.get(11)}");
+            Console.WriteLine($"what is value paired with key 111? {ht.get(111)}");
 
         }
     }
