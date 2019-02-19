@@ -24,3 +24,4 @@ Create a hashset, for loop go throught the string array, if hashset already has 
 ## Solution
 <!-- Embedded whiteboard image -->
 
+![imgae](IMG_9784.jpg)
