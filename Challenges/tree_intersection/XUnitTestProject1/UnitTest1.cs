@@ -17,9 +17,12 @@ namespace TreeIntersectionTDD {
             Tree tr2 = new Tree();
             tr2.add(5);
 
-          List<int> res=  Program.treeIntersection(tr1.Root, tr2.Root);
+          HashSet<int> res=  Program.treeIntersection(tr1.Root, tr2.Root);
+            
             Assert.True(res.Count == 1);
-            Assert.True(res[0] == 5);
+           bool b= res.Contains(5);
+            Assert.True(b);
+
         }
         /// <summary>
         /// have same value nodes but diffenrent order
@@ -34,10 +37,13 @@ namespace TreeIntersectionTDD {
             tr2.add(51);
             tr2.add(31);
 
-            List<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
+           HashSet<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
             Assert.True(res.Count == 2);
-            Assert.Equal(31,res[0]);
-            Assert.Equal(51, res[1]);
+            bool b = res.Contains(51);
+            bool b2 = res.Contains(31);
+            Assert.True(b);
+            Assert.True(b2);
+
         }
 
         /// <summary>
@@ -53,7 +59,7 @@ namespace TreeIntersectionTDD {
             tr2.add(1);
             tr2.add(11);
 
-            List<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
+            HashSet<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
             Assert.True(res.Count == 0);
   
         }
