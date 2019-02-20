@@ -33,7 +33,12 @@ namespace tree_intersection
             }
 
         }
-
+        /// <summary>
+        /// compare with two lists and return a list with all the common nodes'value
+        /// </summary>
+        /// <param name="root1"></param>
+        /// <param name="root2"></param>
+        /// <returns></returns>
         public static List<int> treeIntersection(TreeNode root1, TreeNode root2)
         {
             List<int> res = new List<int>();
@@ -56,7 +61,12 @@ namespace tree_intersection
 
             return res;
         }
-
+        /// <summary>
+        /// fill out the list with tree nodes' value
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="list"></param>
+        /// <returns></returns>
         public static List<int> filloutlist(TreeNode node,List<int> list)
         {
            
