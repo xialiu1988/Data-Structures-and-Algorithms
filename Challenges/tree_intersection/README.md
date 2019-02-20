@@ -21,7 +21,7 @@ S->O(n) created new lists.
 
 example :  two trees pass in and out put their common nodes
 
-![screenshot](../../Assets/sctree.PNG)
+![screenshot](../../Assets/sctree.png)
 
-![imgae](../../Assets/IMG-9786.jpg)
+![imgae](../../Assets/IMG-9786.JPG)
 
