@@ -26,7 +26,7 @@ namespace tree_intersection
             tr2.preOrder(tr2.Root);
             Console.WriteLine("===================");
             Console.WriteLine("===================");
-        HashSet<int> res=   treeIntersection(tr1.Root, tr2.Root);
+       List<int> res=   treeIntersection(tr1.Root, tr2.Root);
             foreach (var item in res)
             {
                 Console.WriteLine(item);
@@ -39,17 +39,28 @@ namespace tree_intersection
         /// <param name="root1"></param>
         /// <param name="root2"></param>
         /// <returns></returns>
-        public static HashSet<int> treeIntersection(TreeNode root1, TreeNode root2)
+        public static List<int> treeIntersection(TreeNode root1, TreeNode root2)
         {
+            List<int> res = new List<int>();
+          List<int> raw1 = new List<int>();
+           List<int> raw2 = new List<int>();
+           List<int> list = filloutlist(root1,raw1);
+
+            List<int> list2 = filloutlist(root2,raw2);
+          
+            for(int i = 0; i < list.Count; i++)
+            {
+                for(int j = 0; j < list2.Count; j++)
+                {
+                    if (list[i] == list2[j])
+                    {
+                        res.Add(list[i]);
+                    }
+                }
+            }
+          
+
            
-           HashSet<int> raw1 = new HashSet<int>();
-           HashSet<int> raw2 = new HashSet<int>();
-            HashSet<int> list = filloutlist(root1,raw1);
-
-            HashSet<int> list2 = filloutlist(root2,raw2);
-            HashSet<int> res = new HashSet<int>(list);
-
-            res.IntersectWith(list2);
             return res;
         }
         /// <summary>
@@ -58,7 +69,7 @@ namespace tree_intersection
         /// <param name="node"></param>
         /// <param name="list"></param>
         /// <returns></returns>
-        public static HashSet<int> filloutlist(TreeNode node,HashSet<int> list)
+        public static List<int> filloutlist(TreeNode node,List<int> list)
         {
            
             if (node != null)

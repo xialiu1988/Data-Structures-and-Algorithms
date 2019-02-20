@@ -17,11 +17,11 @@ namespace TreeIntersectionTDD {
             Tree tr2 = new Tree();
             tr2.add(5);
 
-          HashSet<int> res=  Program.treeIntersection(tr1.Root, tr2.Root);
+        List<int> res=  Program.treeIntersection(tr1.Root, tr2.Root);
             
             Assert.True(res.Count == 1);
-           bool b= res.Contains(5);
-            Assert.True(b);
+
+            Assert.True(res[0]==5);
 
         }
         /// <summary>
@@ -37,12 +37,11 @@ namespace TreeIntersectionTDD {
             tr2.add(51);
             tr2.add(31);
 
-           HashSet<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
+          List<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
             Assert.True(res.Count == 2);
-            bool b = res.Contains(51);
-            bool b2 = res.Contains(31);
-            Assert.True(b);
-            Assert.True(b2);
+     
+            Assert.True(res[0]==31);
+            Assert.True(res[1]==51);
 
         }
 
@@ -59,7 +58,7 @@ namespace TreeIntersectionTDD {
             tr2.add(1);
             tr2.add(11);
 
-            HashSet<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
+            List<int> res = Program.treeIntersection(tr1.Root, tr2.Root);
             Assert.True(res.Count == 0);
   
         }

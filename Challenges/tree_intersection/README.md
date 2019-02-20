@@ -18,3 +18,10 @@ T->O(nlogn) recursive function to fill out the lists and for loop to traversal t
 S->O(n) created new lists.
 ## Solution
 <!-- Embedded whiteboard image -->
+
+example :  two trees pass in and out put their common nodes
+
+![screenshot](../../Assets/sctree.PNG)
+
+![imgae](../../Assets/IMG-9786.jpg)
+
