@@ -58,7 +58,11 @@ TABLE OF CONTENTS
 
 19.[Challenge: repeated word](Challenges/RepeatedWord)
 
+
 20.[Challenge: tree_intersectiond](Challenges/tree_intersection)
+
+
+21.[Challenge: left_join](Challenges/left_join)
 
 
 
