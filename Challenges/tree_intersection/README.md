@@ -11,10 +11,13 @@ Without utilizing any of the built-in library methods available to your language
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
 store the node value in lists, and compare two lists, add common value to a result list, and after for loop return the result list.
 
 BigO
+
 T->O(nlogn) recursive function to fill out the lists and for loop to traversal the list.
+
 S->O(n) created new lists.
 ## Solution
 <!-- Embedded whiteboard image -->
