@@ -33,11 +33,12 @@ namespace left_join
                 Console.WriteLine(String.Format("{0}: {1}", key, hs2[key]));
             }
             Console.WriteLine("===================");
+        //get the list from the method
             List<string> list= Leftjointables(hs1, hs2);
-            
+       //print the list out to the console.
             for (int i = 0; i < list.Count; i++)
             {
-                Console.WriteLine(list[i]);
+                Console.WriteLine("["+list[i]+ "]");      
             }
 
         }
@@ -54,23 +55,19 @@ namespace left_join
             foreach (string key in hs1.Keys)
             {
 
-
+                //if both table has the key will add both values to the list
                 if (hs2.Contains(key))
                 {
                     list.Add(key + ":" + hs1[key] + "," + hs2[key]);
                 }
 
                 else
-                {
+                {//onlu add left table's value to the list
                     list.Add(key + ":" + hs1[key] + "," + "null");
-
-                  
+                
                 }
             }
                
-
-            
-
             return list;
 
         }
