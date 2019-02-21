@@ -35,7 +35,7 @@ namespace left_join
             Console.WriteLine("===================");
         //get the list from the method
             List<string> list= Leftjointables(hs1, hs2);
-       //print the list out to the console.
+        //print the list out to the console.
             for (int i = 0; i < list.Count; i++)
             {
                 Console.WriteLine("["+list[i]+ "]");      
