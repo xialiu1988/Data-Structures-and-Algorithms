@@ -67,7 +67,7 @@ namespace left_join
                 
                 }
             }
-               
+              
             return list;
 
         }
