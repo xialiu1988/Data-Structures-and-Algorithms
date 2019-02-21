@@ -39,4 +39,4 @@ S-> O(1)     create a list
 
 ## Solution
 
-![imgaeg](../../Assets/IMG-9788.jpg)
+![imgaeg](../../Assets/IMG-9788.JPG)
