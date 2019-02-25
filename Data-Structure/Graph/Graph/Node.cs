@@ -6,20 +6,16 @@ namespace Graph
 {
    public class Node
     {
-        public int Value { get; set; }
-        public List<Node> Neighbors { get; set; }
-        public bool Visited { get; set; }
-        public  int Degree { get; set; }
+        public Vertex V{ get; set; }
+       public Node Next { get; set; }
         /// <summary>
         ///Node constructor
         /// </summary>
         /// <param name="val"></param>
-        public Node(int val)
+        public Node(Vertex v)
         {
-            Value = val;
-            Neighbors = new List<Node>();
-            Visited = false;
-            Degree = Neighbors.Count;
+            V = v;
+          
         }
     }
 }
