@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Graph
@@ -42,15 +43,42 @@ namespace Graph
         //Takes in the two nodes to be connected by the edge
         //Both nodes should already be in the Graph
 
+            public void AddEdge(Node n1,Node n2,int? weight)
+        {
+            if (n1.Neighbors.Contains(n2))
+            {
+                Console.WriteLine("already exsits");
+            }
+            else
+            {
+                n1.Neighbors.Add(n2);
+                n2.Neighbors.Add(n1);
 
+            }
+
+
+        }
 
 
         //getnodes()Returns all of the nodes in the graph as a collection (set, list, or similar)
+
+            public List<Node> GetNodes()
+        {
+            return Vertices;
+        }
+
+
         // getneighborr()Returns a collection of nodes connected to the given node
         //Takes in a given node
         //Include the weight of the connection in the returned collection
 
+            public List<Node> GetNeighbors(Node n)
+        {
+            int index = Vertices.IndexOf(n);
+            return Vertices[index].Neighbors;
 
+
+        }
 
         /// <summary>
         /// Returns the total number of nodes in the graph
