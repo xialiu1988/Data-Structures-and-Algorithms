@@ -8,7 +8,7 @@ namespace Graphs
    public class Graph
     {
         public List<Vertex> Vertices { get; set; }
-        //public Tuple<Node,Node> Edge { get; set; }
+    
         /// <summary>
         /// graph constructor 
         /// </summary>
@@ -130,6 +130,25 @@ namespace Graphs
             }
             return neighbors;
         }
+
+        public List<(int,int)> GetNeighborswithweghts(Vertex v)
+        {
+            List<(int, int)> neighbors = new List<(int, int)>();
+            
+            int index = Vertices.IndexOf(v);
+            if(Vertices[index].firstEdge!=null)
+            {
+                Node temp = Vertices[index].firstEdge;
+                while (temp != null)
+                {
+                    neighbors.Add((temp.V.data, temp.Weight));
+                    temp = temp.Next;
+                }
+            }
+
+            return neighbors;
+        }
+
 
         /// <summary>
         /// Returns the total number of nodes in the graph
