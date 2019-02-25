@@ -23,7 +23,7 @@ namespace Graphs
         /// </summary>
         /// <param name="val"></param>
         /// <returns>Returns the added node</returns>
-        public Vertex AddNode(int val)
+        public Vertex AddNode(string val)
         {
            Vertex node = new Vertex(val);
             if (Vertices.Contains(node))
@@ -135,9 +135,9 @@ namespace Graphs
         /// </summary>
         /// <param name="v"></param>
         /// <returns></returns>
-        public List<(int,int)> GetNeighborswithweghts(Vertex v)
+        public List<(string,int)> GetNeighborswithweghts(Vertex v)
         {
-            List<(int, int)> neighbors = new List<(int, int)>();
+            List<(string, int)> neighbors = new List<(string, int)>();
             
             int index = Vertices.IndexOf(v);
             if(Vertices[index].firstEdge!=null)

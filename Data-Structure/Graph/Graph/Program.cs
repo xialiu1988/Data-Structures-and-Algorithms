@@ -6,11 +6,13 @@ namespace Graphs
     {
        public static void Main(string[] args)
         {
+            Console.WriteLine("===");
             Graph g = new Graph();
-           Vertex v1= g.AddNode(1);
-           Vertex v2= g.AddNode(2);
-           Vertex v3= g.AddNode(3);
-            Vertex v4=g.AddNode(4);
+            Vertex v1 = g.AddNode("a");
+            Console.WriteLine(v1.data);
+            Vertex v2 = g.AddNode("b");
+            Vertex v3 = g.AddNode("c");
+            Vertex v4 = g.AddNode("d");
 
             g.AddEdge(v1, v2, 10);
             g.AddEdge(v1, v3, 14);

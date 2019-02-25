@@ -16,8 +16,8 @@ namespace graphTDD
         {
             Graph p = new Graph();
 
-           Vertex v1= p.AddNode(1);
-            Assert.Equal(1, v1.data);
+           Vertex v1= p.AddNode("a");
+            Assert.Equal("a", v1.data);
         }
 
 
@@ -28,7 +28,7 @@ namespace graphTDD
         public void canAddEdgetothegraph()
         {
             Graph p = new Graph();
-            Vertex v1 = p.AddNode(1);
+            Vertex v1 = p.AddNode("a");
             p.AddEdge(v1, v1, 3);
             Assert.Equal(3, v1.firstEdge.Weight);
         }
@@ -44,17 +44,17 @@ namespace graphTDD
         public void canretrievedallnodesfromgraph()
         {
             Graph g = new Graph();
-            Vertex v1 = g.AddNode(1);
-            Vertex v2 = g.AddNode(2);
-            Vertex v3 = g.AddNode(3);
-            Vertex v4 = g.AddNode(4);
+            Vertex v1 = g.AddNode("a");
+            Vertex v2 = g.AddNode("b");
+            Vertex v3 = g.AddNode("c");
+            Vertex v4 = g.AddNode("d");
 
            List<Vertex> list= g.GetNodes();
             Assert.True(list.Count == 4);
-            Assert.True(list[0].data == 1);
-            Assert.True(list[1].data == 2);
-            Assert.True(list[2].data == 3);
-            Assert.True(list[3].data == 4);
+            Assert.True(list[0].data == "a");
+            Assert.True(list[1].data == "b");
+            Assert.True(list[2].data == "c");
+            Assert.True(list[3].data == "d");
 
         }
         /// <summary>
@@ -64,9 +64,9 @@ namespace graphTDD
         public void cangetneighbors()
         {
             Graph g = new Graph();
-            Vertex v1 = g.AddNode(1);
-            Vertex v2 = g.AddNode(2);
-            Vertex v3 = g.AddNode(3);
+            Vertex v1 = g.AddNode("a");
+            Vertex v2 = g.AddNode("b");
+            Vertex v3 = g.AddNode("c");
             g.AddEdge(v1, v2, 10);
             g.AddEdge(v1, v3, 12);
             List<Vertex> list=g.GetNeighbors(v1);
@@ -80,10 +80,10 @@ namespace graphTDD
         public void canreturnpropsize()
         {
             Graph g = new Graph();
-            Vertex v1 = g.AddNode(1);
-            Vertex v2 = g.AddNode(2);
-            Vertex v3 = g.AddNode(3);
-            Vertex v4 = g.AddNode(4);
+            Vertex v1 = g.AddNode("a");
+            Vertex v2 = g.AddNode("b");
+            Vertex v3 = g.AddNode("c");
+            Vertex v4 = g.AddNode("d");
 
             Assert.True(g.Size() == 4);
         }
@@ -95,7 +95,7 @@ namespace graphTDD
         public void onenodewithedge()
         {
             Graph g = new Graph();
-            Vertex v1 = g.AddNode(1);
+            Vertex v1 = g.AddNode("a");
             g.AddEdge(v1, v1, 3);
             Assert.True(v1.firstEdge.Weight == 3);
         }
@@ -118,15 +118,16 @@ namespace graphTDD
         public void cangetneighborswithweight()
         {
             Graph g = new Graph();
-            Vertex v1 = g.AddNode(1);
-            Vertex v2 = g.AddNode(2);
-            Vertex v3 = g.AddNode(3);
+            Vertex v1 = g.AddNode("a");
+            Vertex v2 = g.AddNode("b");
+            Vertex v3 = g.AddNode("c");
+          
             g.AddEdge(v1, v2, 10);
             g.AddEdge(v1, v3, 12);
-            List<(int,int)> list = g.GetNeighborswithweghts(v1);
+            List<(string,int)> list = g.GetNeighborswithweghts(v1);
             Assert.True(list.Count == 2);
-            Assert.True(list[0]==(2,10));
-            Assert.True(list[1] == (3, 12));
+            Assert.True(list[0]==("b",10));
+            Assert.True(list[1]==("c", 12));
         }
     }
 }
