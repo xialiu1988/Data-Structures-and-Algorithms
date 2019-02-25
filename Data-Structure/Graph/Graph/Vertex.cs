@@ -6,10 +6,10 @@ namespace Graphs
 {
   public  class Vertex
     {
-        public int data { get; set; }
+        public string data { get; set; }
         public Node firstEdge { get; set; }
         public bool visited { get; set; }
-        public Vertex(int val)
+        public Vertex(string val)
         {
             data = val;
         }
