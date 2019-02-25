@@ -130,7 +130,11 @@ namespace Graphs
             }
             return neighbors;
         }
-
+        /// <summary>
+        /// get neighbors with nodes' weights
+        /// </summary>
+        /// <param name="v"></param>
+        /// <returns></returns>
         public List<(int,int)> GetNeighborswithweghts(Vertex v)
         {
             List<(int, int)> neighbors = new List<(int, int)>();
