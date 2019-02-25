@@ -51,7 +51,7 @@ Node class: includes its Vertex(which vertex the node connect with) , its next N
 
 Graph class: include a list of Vertices (type is Vertex)
 
-AddNode(int val): check the list of Vertices  first see if the node alreadt exsits, if not create new Vertex and add it  to the vertices;
+AddNode(string val): check the list of Vertices  first see if the node alreadt exsits, if not create new Vertex and add it  to the vertices;
 
 AddEdge(Vertex v1,Vertex v2, int weight): check if the V1 has firstEdge, if not create new Node with v2 and weight;
 if the v1's fisrtEdge's data equals to v2's data, it means the edge between these two Vertex already exsits, otherwise add node (v2) to the last postion of the list
@@ -59,7 +59,7 @@ if the v1's fisrtEdge's data equals to v2's data, it means the edge between thes
 
 GetNodes():return the Vertices (List<Vertex>);
 
-GetNeighbors(Vertex n):  create new List<(int,int)> for neighbors, find the index of vertex n in the Vertices list, and find its fistEdge node, add node's data and its weight to the neighbors and point to the next node until the last node
+GetNeighbors(Vertex n):  create new List<(string,int)> for neighbors, find the index of vertex n in the Vertices list, and find its fistEdge node, add node's data and its weight to the neighbors and point to the next node until the last node
 
 
 size(): this will return the list's size which is list.Count;
