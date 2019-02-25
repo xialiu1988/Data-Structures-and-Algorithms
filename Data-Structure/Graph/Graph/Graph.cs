@@ -7,13 +7,14 @@ namespace Graph
 {
    public class Graph
     {
-        public List<Node> Vertices { get; set; }
+        public List<Vertex> Vertices { get; set; }
         //public Tuple<Node,Node> Edge { get; set; }
         /// <summary>
         /// graph constructor 
         /// </summary>
         public Graph()
         {
+            Vertices = new List<Vertex>();
 
         }
        
@@ -22,9 +23,9 @@ namespace Graph
         /// </summary>
         /// <param name="val"></param>
         /// <returns>Returns the added node</returns>
-        public Node AddNode(int val)
+        public Vertex AddNode(int val)
         {
-            Node node = new Node(val);
+           Vertex node = new Vertex(val);
             if (Vertices.Contains(node))
             {
                 Console.WriteLine("already exsits");
@@ -43,26 +44,49 @@ namespace Graph
         //Takes in the two nodes to be connected by the edge
         //Both nodes should already be in the Graph
 
-            public void AddEdge(Node n1,Node n2,int? weight)
+            public void AddEdge(Vertex n1,Vertex n2)
         {
-            if (n1.Neighbors.Contains(n2))
+            foreach (Vertex v in Vertices)
             {
-                Console.WriteLine("already exsits");
+                if (!v.data.Equals(n1)||!v.data.Equals(n2))
+                {
+                    Console.WriteLine("You are missing vertex");
+                }
+               
             }
-            else
-            {
-                n1.Neighbors.Add(n2);
-                n2.Neighbors.Add(n1);
-
-            }
-
+            AddEdgeOneway(n1, n2);
+            AddEdgeOneway(n2, n1);
 
         }
 
+        private void AddEdgeOneway(Vertex from, Vertex to)
+        {
+            if (from.firstEdge == null)
+            {
+                from.firstEdge = new Node(to);
+            }
+            else
+            {
+                Node node = from.firstEdge;
+                Node temp;
+                do
+                {
+                    if (node.V.data.Equals(to.data))
+                    {
+                        Console.WriteLine("already Exsits this edge");
+                    }
+
+                    temp = node;
+                    node = node.Next;
+                } while (node != null);
+                    temp.Next = new Node(to);//add to the last position of the list
+                
+            }
+        }
 
         //getnodes()Returns all of the nodes in the graph as a collection (set, list, or similar)
 
-            public List<Node> GetNodes()
+            public List<Vertex> GetNodes()
         {
             return Vertices;
         }
@@ -72,12 +96,20 @@ namespace Graph
         //Takes in a given node
         //Include the weight of the connection in the returned collection
 
-            public List<Node> GetNeighbors(Node n)
+            public List<Vertex> GetNeighbors(Vertex n)
         {
+            List<Vertex> neighbors = new List<Vertex>();
             int index = Vertices.IndexOf(n);
-            return Vertices[index].Neighbors;
-
-
+            if (Vertices[index].firstEdge != null)
+            {
+                Node temp = Vertices[index].firstEdge;
+                while (temp != null)
+                {
+                    neighbors.Add(temp.V);
+                    temp = temp.Next;
+                }
+            }
+            return neighbors;
         }
 
         /// <summary>
