@@ -162,5 +162,49 @@ namespace Graphs
         {
             return Vertices.Count;
         }
+
+
+        /// <summary>
+        /// breadth-first traversal 
+        /// </summary>
+        /// <returns></returns>
+        public List<Vertex> BFSTraverse()
+        {
+            
+           List<Vertex> res=BFS(Vertices[0]);
+            return res;
+            
+        }
+        /// <summary>
+        /// breadth-first traversal helper
+        /// </summary>
+        /// <param name="v"></param>
+        private List<Vertex> BFS(Vertex v)
+        {//create a list to insotre the vertices
+            List<Vertex> list = new List<Vertex>();
+            //create a queue
+            Queue<Vertex> queue = new Queue<Vertex>();
+            list.Add(v);
+            //Console.WriteLine(v.data + " ");
+            v.visited = true;
+            queue.Enqueue(v);
+            while (queue.Count > 0)
+            {
+                Vertex w = queue.Dequeue();
+                Node node = w.firstEdge;
+                while (node != null)
+                {
+                    if (!node.V.visited)
+                    {
+                        list.Add(node.V);
+                       // Console.WriteLine(node.V.data + " ");//visit this one
+                        node.V.visited = true;//means it is already visited
+                        queue.Enqueue(node.V);//put the vertex in the queue
+                    }
+                    node = node.Next;//go to next node
+                }
+            }
+            return list;
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Graphs
 {
@@ -19,6 +20,13 @@ namespace Graphs
             g.AddEdge(v2, v4, 13);
 
             g.Print(g.Vertices);
+            Console.WriteLine("===");
+            Console.WriteLine("===");
+           List<Vertex> res= g.BFSTraverse();
+            foreach (Vertex v in res)
+            {
+                Console.WriteLine(v.data);
+            }
         }
     }
 }
