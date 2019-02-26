@@ -38,6 +38,13 @@ Size()
 
 Returns the total number of nodes in the graph
 
+BFStraversal()
+
+Extend graph object with a breadth-first traversal method that accepts a starting node.
+
+Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited.
+
+Display the collection.
 
 
 # Approach & Efficiency
@@ -64,7 +71,7 @@ GetNeighbors(Vertex n):  create new List<(string,int)> for neighbors, find the i
 
 size(): this will return the list's size which is list.Count;
 
-
+BFSTraversal(): using Queue to store the vertices, if not visisted enqueue that vertex,if already visited, add the vertex to the list and return the list in the end
 # Efficiency:
 
 Big O
@@ -74,3 +81,6 @@ Space: O(n), assume the graph will have some numbers of nodes
 Time: O(n), worst case will go through every node in the graph
 
    
+# Image for BFSTraversal
+
+![image](../../Assets/bfs.JPG)
