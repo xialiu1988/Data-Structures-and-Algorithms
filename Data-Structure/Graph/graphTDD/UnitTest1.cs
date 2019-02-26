@@ -110,7 +110,6 @@ namespace graphTDD
                 
         }
 
-
         /// <summary>
         /// can get neighbors with weight
         /// </summary>
