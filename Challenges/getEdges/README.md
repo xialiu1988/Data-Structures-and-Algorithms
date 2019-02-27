@@ -16,8 +16,19 @@ and how much it would cost.
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
+Create a List<(string,string)> result to store the final result;
+
+Take in one city in the cities arrat and using GetNeighbors(Vertex v) from Graph class to get the list of its neighbors,
+
+then check the rest of the cities in the cities array, if they all exists in the lists, add their weights and add "True,cost",otherwise add "False, $0"
+
+in the end , return result list and print it on the screen.
+
+
+
 T->O(n);
 S->O(n);
+
 
 ## Solution
 <!-- Embedded whiteboard image -->
