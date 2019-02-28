@@ -27,4 +27,4 @@ S->O(H) i am doing recursion so it will be height of call stack
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![img](DFS.JPG)
+![img](../../Assets/DFS.JPG)
