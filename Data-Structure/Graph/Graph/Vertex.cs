@@ -12,6 +12,7 @@ namespace Graphs
         public Vertex(string val)
         {
             data = val;
+            visited = false;
         }
     }
 }

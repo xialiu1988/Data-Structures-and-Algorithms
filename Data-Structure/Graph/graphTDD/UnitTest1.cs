@@ -110,7 +110,6 @@ namespace graphTDD
                 
         }
 
-
         /// <summary>
         /// can get neighbors with weight
         /// </summary>
@@ -128,6 +127,60 @@ namespace graphTDD
             Assert.True(list.Count == 2);
             Assert.True(list[0]==("b",10));
             Assert.True(list[1]==("c", 12));
+        }
+
+
+        /// <summary>
+        /// test for BFs-traversal
+        /// </summary>
+        [Fact]
+        public void canbreathfirsttraversal()
+        {
+            Graph g = new Graph();
+            Vertex v1 = g.AddNode("a");
+
+            List<Vertex> list = g.BFSTraverse();
+            Assert.True(list.Count == 1);
+            Assert.True(list[0].data == "a");
+        }
+
+
+        /// <summary>
+        /// test for bfs-traversal
+        /// </summary>
+        [Fact]
+        public void canbreathfirst()
+        {
+            Graph g = new Graph();
+            Vertex v1 = g.AddNode("a");
+            Vertex v2 = g.AddNode("b");
+          
+            g.AddEdge(v1, v2, 10);
+            List<Vertex> list = g.BFSTraverse();
+            Assert.Equal(2,list.Count);
+            Assert.Equal("a",list[0].data);
+            Assert.Equal("b",list[1].data);
+        }
+
+
+
+        /// <summary>
+        /// bfs-test
+        /// </summary>
+        [Fact]
+        public void cantestBFStraversal()
+        {
+            Graph g = new Graph();
+            Vertex v1 = g.AddNode("a");
+            Vertex v2 = g.AddNode("b");
+            Vertex v3 = g.AddNode("c");
+            g.AddEdge(v1, v2, 10);
+            g.AddEdge(v1, v3, 12);
+            List<Vertex> list = g.BFSTraverse();
+            Assert.Equal(3, list.Count);
+            Assert.Equal("a", list[0].data);
+            Assert.Equal("b", list[1].data);
+            Assert.Equal("c", list[2].data);
         }
     }
 }

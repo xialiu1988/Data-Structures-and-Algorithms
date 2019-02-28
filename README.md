@@ -66,7 +66,8 @@ TABLE OF CONTENTS
 
 22.[Challenge: MockInterview1-MostCommonWordInaBook](Challenges/MockInterview1-MostCommonWordInaBook)
 
-23.[Challenge: DepthfirstGraph](Challenges/DepthfirsGraph)
+
+23.[Challenge: Get Edges](Challenges/getEdges)
 
 
-
+24.[Challenge: DepthfirstGraph](Challenges/DepthfirsGraph)
