@@ -20,11 +20,10 @@ node and check if the node is null, and if the vertex connext to it has been vis
 
 move on to next node and till the end
 
-
 Effiency:
 T->O(n) you have to go through every node in the graph
 S->O(H) i am doing recursion so it will be height of call stack
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![img](DFS.JPG)
+![img](../../Assets/DFS.JPG)

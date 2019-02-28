@@ -70,4 +70,4 @@ TABLE OF CONTENTS
 23.[Challenge: Get Edges](Challenges/getEdges)
 
 
-24.[Challenge: DepthfirstGraph](Challenges/DepthfirsGraph)
+24.[Challenge: DepthfirstGraph](Challenges/DepthfirstGraph)
