@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using Graphs;
 namespace DepthfirstGraph
 {
-  public  class Program
+   
+    public  class Program
     {
-      public static void Main(string[] args)
+       
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             Graph g = new Graph();
@@ -23,27 +26,37 @@ namespace DepthfirstGraph
             }
 
             Console.WriteLine("==================");
-            DFS(g.Vertices[0]);
+            List<string> s = new List<string>();
+         List< string> res= DFS(g.Vertices[0],s);
+           // Console.WriteLine(res.Count);
+            foreach (string ss in res)
+            {
+                Console.WriteLine(ss);
+            }
         }
-
+       
         /// <summary>
         /// depth first traversal DFS using recursive method
         /// </summary>
         /// <param name="v"></param>
-        public static void DFS(Vertex v)
+        public static List<string> DFS(Vertex v,List<string> s)
         {
+          
             v.visited = true;
-            Console.WriteLine(v.data);
-            Node n = v.firstEdge;
+            s.Add(v.data);
+            // Console.Write(v.data);
+                  Node n = v.firstEdge;
             while (n != null)
             {
                 if (n.V.visited == false)
                 {
-                    DFS(n.V);
+                    DFS(n.V,s);
                 }
                 n = n.Next;
             }
-
+            return s;
         }
+
+      
     }
 }
